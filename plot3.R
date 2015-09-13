@@ -1,6 +1,6 @@
 ## Getting full dataset
 # raw data (.txt) files are saved to 'path_to_working_folder/ExData_Plotting1/Data/'
-dataset_raw <- read.csv("./Data/household_power_consumption.txt", header=T, sep=';', na.strings="?", 
+dataset_raw <- read.csv("./ExData_Plotting1/Data/household_power_consumption.txt", header=T, sep=';', na.strings="?", 
                       nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
 dataset_raw$Date <- as.Date(dataset_raw$Date, format="%d/%m/%Y")
 
